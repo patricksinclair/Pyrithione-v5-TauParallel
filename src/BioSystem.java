@@ -429,7 +429,7 @@ public class BioSystem {
                 int max_poss_pop = bs.getBiofilmSize()*K;
                 int total_N = bs.getTotalN();
 
-                System.out.println("rep : "+i+"\tt: "+bs.getTimeElapsed()+"\tpop size: "+total_N+"/"+max_poss_pop);
+                System.out.println("rep : "+i+"\tt: "+bs.getTimeElapsed()+"\tpop size: "+total_N+"/"+max_poss_pop+"\tbf_edge: "+bs.getBiofilmEdge());
 
                 popSizes[timerCounter] = total_N;
                 popDistbs[timerCounter] = bs.getPopulationDistribution();
