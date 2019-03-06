@@ -424,7 +424,7 @@ public class BioSystem {
 
         while(bs.timeElapsed <= duration+0.02*interval){
 
-            if((bs.getTimeElapsed()%interval >= 0. && bs.getTimeElapsed()%interval <= 0.1*interval) && !alreadyRecorded){
+            if((bs.getTimeElapsed()%interval >= 0. && bs.getTimeElapsed()%interval <= 0.02*interval) && !alreadyRecorded){
 
                 int max_poss_pop = bs.getBiofilmSize()*K;
                 int total_N = bs.getTotalN();
@@ -456,7 +456,7 @@ public class BioSystem {
         int K = 500, L = 500;
         double c_max = 10., alpha = 0.01, tau = 0.01;
 
-        int nReps = 10;
+        int nReps = 16;
         double duration = 200.;
 
         double[][] allPopSizes = new double[nReps][];
